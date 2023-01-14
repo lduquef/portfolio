@@ -22,7 +22,7 @@ body {
 
 @font-face{
   font-family: 'burtons';
-  src : url('../public/Burtons.otf') format('opentype');
+  src : url('../../public/Burtons.otf') format('opentype');
   font-weight: bold;
 }
 
