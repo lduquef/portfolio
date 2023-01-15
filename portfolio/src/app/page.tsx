@@ -7,6 +7,7 @@ import perfil from '../../public/perfil.png';
 import design from '../../public/design.png';
 import code from '../../public/code.png'
 import consulting from '../../public/consulting.png'
+import Card from '../componets/Card';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -52,22 +53,28 @@ export default function Home() {
             ,including brand design, programming and teaching.
           </p>
         </div>
-        <div className="text-center shadow-lg rounded-xl my-10">
-          <Image src={design} alt="design" width={100} height={100}/>
-          <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-          <p>
-            {""}
-            creating elegant designs suited for your needs following core design theory
-          </p>
-          <h4 className=" font-semibold py-4 text-teal-600">Design tools i use</h4>
-          <p className="text-gray-800 py-1"> Photoshop</p>
-          <p className="text-gray-800 py-1">Illustrator</p>
-          <p className="text-gray-800 py-1">figma</p>
-
-        </div>
-
-        <Image src={code} alt="code" />
-        <Image src={consulting} alt="consulting" />
+        
+        <Card image='design'
+        title='Beautiful Design'
+        parrafo="creating elegant designs suited for your needs following core design theory."
+        p1= "Phtoshop"
+        p2="illustrator"
+        p3="Figma"
+        />
+        <Card image='code'
+        title='Beautiful Design'
+        parrafo="creating elegant designs suited for your needs following core design theory."
+        p1= "Phtoshop"
+        p2="illustrator"
+        p3="Figma"
+        />
+        <Card image='consulting'
+        title='Beautiful Design'
+        parrafo="creating elegant designs suited for your needs following core design theory."
+        p1= "Phtoshop"
+        p2="illustrator"
+        p3="Figma"
+        />
       </section>
     </main>
   )
