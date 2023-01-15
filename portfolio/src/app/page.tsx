@@ -34,7 +34,7 @@ export default function Home() {
             <AiFillLinkedin className = " text-blue-900"/>
             <AiFillYoutube className = " text-red-600"/>
           </div>        
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
             <Image  objectFit = "cover" src={perfil} alt="foto de perfil"/>
           </div>
         </div>
