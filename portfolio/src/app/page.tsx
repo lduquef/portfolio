@@ -97,22 +97,25 @@ export default function Home() {
         name = 'web1'
         title='calculator'
         parrafo = 'consiste'
-        
+        link = "https://lduquef.github.io/calculator/"
         />
         <Web 
         name = 'web2'
         title='Enlistar Tareas'
         parrafo = 'consiste'
+        link = "https://lduquef.github.io/tareas-2.0/"
         />
         <Web 
         name = 'web3'
         title='contador de clicks'
         parrafo = 'consiste'
+        link = "https://lduquef.github.io/contador-de-clics/"
         />
         <Web 
         name = 'web4'
         title='landign page'
         parrafo = 'consiste'
+        link = "https://lduquef.github.io/landpage/"
         />
       </section>
     </main>
