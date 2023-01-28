@@ -1,7 +1,7 @@
 'use client'
 import { Inter } from '@next/font/google'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle,AiFillLinkedin,AiFillYoutube} from 'react-icons/ai';
+import {AiFillLinkedin,AiFillYoutube,AiFillGithub} from 'react-icons/ai';
 import "./globals.css"
 import Image from 'next/image';
 import perfil from '../../public/perfil.png';
@@ -10,7 +10,7 @@ import Web from '../componets/Web';
 const inter = Inter({ subsets: ['latin'] });
 import React from 'react';
 import Head from './head'
-
+import { ExternalLink } from 'react-external-link';
 export default function Home() {
   const [darkMode,setDarkmode] = React.useState(false);
   return (
@@ -38,9 +38,16 @@ export default function Home() {
           <p className="text-lg py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">
             freelancer providing services for programmin needs. Join me down below and let{"'"}s get cracking!</p>
           <div className = "text-5xl flex justify-center gap-y-2 py-3 ">
-            <AiFillTwitterCircle className = "  text-blue-600"/>
-            <AiFillLinkedin className = " text-blue-900"/>
-            <AiFillYoutube className = " text-red-600"/>
+            
+            <ExternalLink href="https://www.linkedin.com/in/luis-santiago-duque-franco-0718ab258">
+            <AiFillLinkedin  className = " text-blue-900 dark:text-gray-100"/>
+            </ExternalLink>
+            <ExternalLink href="https://github.com/lduquef">
+            <AiFillGithub  className="text-gray-900 dark:text-gray-100" > </AiFillGithub>
+            </ExternalLink>
+            <ExternalLink href="/">
+            <AiFillYoutube  className = "  text-red-700 dark:text-gray-100"/>
+            </ExternalLink>
           </div>  
           {darkMode? ( <div className="mx-auto  bg-gradient-to-b from-[#25175a] to-indigo-300 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image className = "mx-auto" src={perfil} alt="foto de perfil"/>

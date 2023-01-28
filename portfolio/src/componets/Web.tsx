@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ExternalLink } from "react-external-link";
-import { link } from "fs";
+
 
 function Web(props: { name: string; title: string; parrafo: string; link:string; }) {
   return(
